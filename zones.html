@@ -76,39 +76,24 @@
 <section>
   <div class="wrap" style="display:flex;flex-direction:column;gap:20px">
     <div class="map-block">
-      <svg class="map-svg" viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte schématique de la zone d'intervention ETOURMY : Nieul-sur-Mer, La Rochelle et l'Île de Ré">
-        <rect x="0" y="0" width="640" height="340" fill="#EAF1EF"/>
-        <path d="M0,60 C90,40 140,90 120,150 C100,220 40,210 0,260 Z" fill="#DCE9E6"/>
-        <path d="M40,120 C120,70 220,90 260,140 C300,190 260,260 180,270 C90,285 20,250 10,190 C0,150 0,140 40,120 Z" fill="#F5F2EC" stroke="#C9D6D2" stroke-width="1.5"/>
-        <path d="M330,20 C420,10 560,30 610,90 C640,130 630,190 590,230 C520,290 380,300 320,260 C270,225 260,150 280,100 C295,60 300,30 330,20 Z" fill="#F5F2EC" stroke="#C9D6D2" stroke-width="1.5"/>
-        <path d="M170,150 C220,120 260,120 285,135" fill="none" stroke="#C9D6D2" stroke-width="10" stroke-linecap="round"/>
-        <path d="M170,150 C220,120 260,120 285,135" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="7 7" stroke-linecap="round"/>
-        <text x="205" y="118" font-family="Space Mono, monospace" font-size="10" fill="#7C8580" letter-spacing="1">PONT DE L'ÎLE DE RÉ</text>
-        <path d="M470 250 L470 300 M460 300 L480 300" stroke="#C9D6D2" stroke-width="4" stroke-linecap="round" fill="none"/>
-        <circle cx="200" cy="205" r="95" fill="none" stroke="#A8971A" stroke-width="1.5" stroke-dasharray="5 6" opacity=".8"/>
-        <path d="M120,175 L130,175 M125,170 L125,180" stroke="#8FA6A1" stroke-width="2"/>
-        <path d="M300,205 L340,205 M320,190 L320,220" stroke="#8FA6A1" stroke-width="2"/>
-        <g>
-          <circle cx="150" cy="235" r="5" fill="#14161A"/>
-          <text x="162" y="239" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="14" fill="#14161A">La Rochelle</text>
-        </g>
-        <g>
-          <circle cx="430" cy="150" r="5" fill="#14161A"/>
-          <text x="442" y="154" font-family="Hanken Grotesk, sans-serif" font-weight="700" font-size="14" fill="#14161A">Île de Ré</text>
-        </g>
-        <g>
-          <path d="M200 190 c0 16 -16 16 -16 32 c0 -16 -16 -16 -16 -32 a16 16 0 0 1 32 0 Z" fill="#F2E01C" stroke="#14161A" stroke-width="1.5" transform="translate(0,-10)"/>
-          <circle cx="200" cy="195" r="5" fill="#14161A"/>
-          <text x="215" y="188" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="14.5" fill="#14161A">ETOURMY</text>
-          <text x="215" y="203" font-family="Space Mono, monospace" font-size="10" fill="#5E6469" letter-spacing=".5">NIEUL-SUR-MER · QG</text>
-        </g>
-        <g font-family="Space Mono, monospace" font-size="9.5" fill="#7C8580">
-          <text x="20" y="20">N</text>
-          <path d="M20 30 L20 12 M15 18 L20 10 L25 18" stroke="#7C8580" stroke-width="1.5" fill="none"/>
+      <svg class="map-svg" viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Localisation schématique d'ETOURMY à Nieul-sur-Mer">
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M40 0H0V40" fill="none" stroke="#E2DCD1" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="640" height="220" fill="#F5F2EC"/>
+        <rect x="0" y="0" width="640" height="220" fill="url(#grid)"/>
+        <g transform="translate(320,110)">
+          <ellipse cx="0" cy="34" rx="16" ry="5" fill="#14161A" opacity=".12"/>
+          <path d="M0 -26 C15 -26 26 -15 26 0 C26 18 0 34 0 34 C0 34 -26 18 -26 0 C-26 -15 -15 -26 0 -26 Z" fill="#F2E01C" stroke="#14161A" stroke-width="1.5"/>
+          <circle cx="0" cy="0" r="6" fill="#14161A"/>
+          <text x="0" y="-40" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="16" fill="#14161A">ETOURMY</text>
+          <text x="0" y="-24" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" fill="#5E6469" letter-spacing=".5">NIEUL-SUR-MER</text>
         </g>
       </svg>
       <div class="map-caption">
-        <span>Carte schématique, non contractuelle · zone d'intervention en pointillés</span>
+        <span>Localisation schématique, non contractuelle</span>
         <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1+rue+des+Wagonnets+17137+Nieul-sur-Mer" target="_blank" rel="noopener">Itinéraire vers notre dépôt →</a>
       </div>
     </div>
@@ -126,35 +111,35 @@
         <h3>Île de Ré</h3>
         <p>Une part importante de notre activité : résidences secondaires, gestion des clés, photos d'avancement, réception à distance possible.</p>
         <div class="pill-row">
-          <span class="pill on">Île de Ré</span>
-          <span class="pill off">Saint-Martin</span>
-          <span class="pill off">La Flotte</span>
-          <span class="pill off">Le Bois-Plage</span>
-          <span class="pill off">Sainte-Marie</span>
-          <span class="pill off">Rivedoux</span>
-          <span class="pill off">Ars, Loix, La Couarde</span>
+          <span class="pill">Île de Ré</span>
+          <span class="pill">Saint-Martin</span>
+          <span class="pill">La Flotte</span>
+          <span class="pill">Le Bois-Plage</span>
+          <span class="pill">Sainte-Marie</span>
+          <span class="pill">Rivedoux</span>
+          <span class="pill">Ars, Loix, La Couarde</span>
         </div>
       </div>
       <div class="zone-group">
         <h3>La Rochelle &amp; agglomération</h3>
         <p>Notre secteur historique, à quelques minutes de notre dépôt de Nieul-sur-Mer.</p>
         <div class="pill-row">
-          <span class="pill on">La Rochelle</span>
-          <span class="pill off">Nieul-sur-Mer</span>
-          <span class="pill off">Lagord</span>
-          <span class="pill off">Périgny</span>
-          <span class="pill off">Aytré</span>
-          <span class="pill off">Dompierre-sur-Mer</span>
-          <span class="pill off">Châtelaillon-Plage</span>
+          <a class="pill" href="zones/la-rochelle.html">La Rochelle</a>
+          <span class="pill">Nieul-sur-Mer</span>
+          <span class="pill">Lagord</span>
+          <span class="pill">Périgny</span>
+          <span class="pill">Aytré</span>
+          <span class="pill">Dompierre-sur-Mer</span>
+          <span class="pill">Châtelaillon-Plage</span>
         </div>
       </div>
       <div class="zone-group">
         <h3>Aunis élargi</h3>
         <p>Selon la nature du chantier, nous intervenons aussi plus largement en Charente-Maritime.</p>
         <div class="pill-row">
-          <span class="pill off">Marans</span>
-          <span class="pill off">Surgères</span>
-          <span class="pill off">Rochefort</span>
+          <span class="pill">Marans</span>
+          <span class="pill">Surgères</span>
+          <span class="pill">Rochefort</span>
         </div>
       </div>
     </div>

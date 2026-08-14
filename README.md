@@ -24,12 +24,18 @@ Toutes les photos dans `/assets` sont **réelles**, scrapées depuis [etourmy-jm
 
 ## 🔧 À confirmer avant mise en ligne
 
-1. **Fourchettes de prix par prestation** (60–190 €/m² carrelage, 20–45 €/m² chape, etc.) : reprises du mockup design, jamais vérifiées avec l'entreprise. Marquées d'un astérisque sur la page.
+1. **Prix** : retirés de la page à la demande du client (plus aucune fourchette affichée sur les cartes prestations).
 2. **« Chape liquide & traditionnelle » comme service à part entière** : le site actuel d'ETOURMY ne mentionne que Plâtrerie sèche/isolation, Carrelage/faïence/pierres et Pose de pierres, pas de "chape" en service autonome. La page ci-contre reprend le positionnement stratégique proposé dans le mockup (carrelage + chape + piscine par la même équipe) : à valider avec le client avant publication, ce n'est peut-être pas encore une offre commercialisée telle quelle.
 3. **Effectif ("15 personnes" dans le mockup original)** : non vérifiable publiquement, volontairement retiré de cette version. Le réintégrer seulement si confirmé.
 4. **Formulaire de devis** : démo uniquement (alert JS, aucun backend). Brancher sur Formspree, Netlify Forms ou un CRM.
 5. **Mentions légales / RGPD** : page à créer.
 6. **Réseaux sociaux en footer** : Facebook et LinkedIn trouvés sur le site actuel, pas encore ajoutés visuellement (liens dans le JSON-LD `sameAs` uniquement).
+
+## 🗺️ Pages zones
+
+`zones.html` liste les 3 secteurs (Île de Ré / La Rochelle & agglo / Aunis élargi) avec une carte schématique minimaliste (un seul pin sur Nieul-sur-Mer, non contractuelle, aucun fond de carte réel type OSM/Google).
+
+`zones/la-rochelle.html` est la **page type** à dupliquer par commune pour du SEO local (une page = une ville). Pour créer une nouvelle zone : copier ce fichier, remplacer "La Rochelle" par la commune dans le `<title>`, la meta description, le H1, l'intro, la FAQ et le JSON-LD (`name` du breadcrumb + `areaServed`), puis lier la commune correspondante dans `zones.html` (voir le lien sur le pill "La Rochelle").
 
 ## 🚀 Mise en ligne rapide (GitHub Pages)
 
