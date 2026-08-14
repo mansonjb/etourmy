@@ -102,15 +102,13 @@
   .presta-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--bordure);border:1px solid var(--bordure)}
   @media (min-width:720px){ .presta-grid{grid-template-columns:repeat(2,1fr)} }
   @media (min-width:1080px){ .presta-grid{grid-template-columns:repeat(3,1fr)} }
-  .presta-card{background:#fff;padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px;min-height:196px}
-  .presta-card.hi{background:#fff;box-shadow:inset 0 0 0 2px var(--yellow)}
+  .presta-card{background:#fff;padding:28px 26px 32px;display:flex;flex-direction:column;gap:12px;min-height:196px;box-shadow:inset 0 0 0 2px transparent;transition:box-shadow .15s ease}
+  .presta-card:hover{box-shadow:inset 0 0 0 2px var(--yellow)}
   .presta-card .n{font-family:'Space Mono',monospace;font-size:11px;color:var(--olive)}
-  .presta-card.hi .n{display:inline-flex;align-self:flex-start;background:var(--yellow);color:var(--ink);font-weight:700;padding:4px 9px;border-radius:100px}
   .presta-card h3{font-size:21px;font-weight:700;letter-spacing:-.015em;color:var(--ink)}
   .presta-card .tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:#8E9599}
   .presta-card p{font-size:15px;color:var(--texte-doux)}
   .presta-card .price{margin-top:auto;font-size:14.5px;font-weight:600;color:var(--ink)}
-  .presta-card.hi .price{color:var(--olive)}
 
   /* ---------- signature ---------- */
   .signature{background:var(--ink);color:#fff}
