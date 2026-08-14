@@ -257,6 +257,8 @@
   .zone-group .pill-row{margin-top:4px}
 
   /* ---------- contexte local (zones/*.html) ---------- */
+  .section-white{background:#fff;border-top:1px solid var(--bordure)}
+  .section-paper{background:var(--paper);border-top:1px solid var(--bordure)}
   .context-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--bordure);border:1px solid var(--bordure)}
   @media (min-width:800px){ .context-grid{grid-template-columns:repeat(2,1fr)} }
   .context-card{background:#fff;padding:28px 26px;display:flex;flex-direction:column;gap:10px}
@@ -271,3 +273,39 @@
     .local-stats .stat:nth-child(2n){border-right:1px solid var(--bordure)}
     .local-stats .stat:last-child{border-right:none}
   }
+  .hero-mini-stats{display:flex;gap:34px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--bordure);margin-top:6px}
+  .hero-mini-stats .mini-stat{display:flex;flex-direction:column;gap:2px;padding-top:14px}
+  .hero-mini-stats .mini-stat b{font-family:'Hanken Grotesk',sans-serif;font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+  .hero-mini-stats .mini-stat span{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.08em;color:var(--texte-clair)}
+
+  /* ---------- teal block (île de Ré) ---------- */
+  .teal-block{background:#1B3A42;padding:64px 0}
+  @media (min-width:960px){ .teal-block{padding:76px 0} }
+  .teal-grid{display:grid;grid-template-columns:1fr;gap:36px}
+  @media (min-width:960px){ .teal-grid{grid-template-columns:1.05fr .95fr;gap:56px;align-items:center} }
+  .teal-block h2{font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.08;letter-spacing:-.028em;font-weight:800;color:#fff}
+  .teal-block > .teal-grid > div:first-child p{font-size:17px;line-height:1.55;color:#CBD8DB;margin-top:14px}
+  .teal-list{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14)}
+  .teal-item{background:#17333A;padding:20px 24px;display:flex;gap:16px;align-items:baseline}
+  .teal-item .n{font-family:'Space Mono',monospace;font-size:11px;color:var(--yellow);flex:none}
+  .teal-item strong{display:block;font-size:15.5px;font-weight:600;color:#fff}
+  .teal-item span{display:block;font-size:14px;color:#9DB4BA;margin-top:3px}
+
+  /* ---------- grille 4 colonnes (contraintes île) ---------- */
+  .context-grid-4{display:grid;grid-template-columns:1fr;gap:16px}
+  @media (min-width:640px){ .context-grid-4{grid-template-columns:repeat(2,1fr)} }
+  @media (min-width:1080px){ .context-grid-4{grid-template-columns:repeat(4,1fr)} }
+  .context-grid-4 .context-card{border:1px solid var(--bordure)}
+
+  /* ---------- notice (encart à fournir) ---------- */
+  .notice-box{border:1px dashed #C9C2B5;background:var(--paper);padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .notice-box .tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--olive);flex:none}
+  .notice-box p{font-size:15px;color:var(--texte-doux)}
+
+  /* ---------- communes grid ---------- */
+  .commune-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bordure);border:1px solid var(--bordure)}
+  @media (min-width:640px){ .commune-grid{grid-template-columns:repeat(3,1fr)} }
+  @media (min-width:960px){ .commune-grid{grid-template-columns:repeat(5,1fr)} }
+  .commune-cell{background:#fff;padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+  .commune-cell strong{font-size:15.5px;font-weight:700;color:var(--ink)}
+  .commune-cell span{font-family:'Space Mono',monospace;font-size:10px;color:var(--texte-clair)}

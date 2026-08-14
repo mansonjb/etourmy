@@ -30,12 +30,16 @@ Toutes les photos dans `/assets` sont **réelles**, scrapées depuis [etourmy-jm
 4. **Formulaire de devis** : démo uniquement (alert JS, aucun backend). Brancher sur Formspree, Netlify Forms ou un CRM.
 5. **Mentions légales / RGPD** : page à créer.
 6. **Réseaux sociaux en footer** : Facebook et LinkedIn trouvés sur le site actuel, pas encore ajoutés visuellement (liens dans le JSON-LD `sameAs` uniquement).
+7. **Temps de trajet vers l'Île de Ré** (`zones/ile-de-re.html`, section "Les dix communes") : à vérifier et ajuster avec le client (Maxime) avant publication, ce sont des estimations.
+8. **`zones/ile-de-re.html` : chantiers réels manquants**. Les 3 cartes "Chantiers sur l'île" sont marquées "COMMUNE ET ANNÉE À CONFIRMER" avec un encart "À FOURNIR" explicite sur la page : il faut au moins 3 vrais chantiers rétais avant de publier, un par commune ensuite (contenu dupliqué sinon).
 
 ## 🗺️ Pages zones
 
-`zones.html` liste les 3 secteurs (Île de Ré / La Rochelle & agglo / Aunis élargi) avec une carte schématique minimaliste (un seul pin sur Nieul-sur-Mer, non contractuelle, aucun fond de carte réel type OSM/Google).
+`zones.html` liste les 3 secteurs (Île de Ré / La Rochelle & agglo / Aunis élargi) avec une carte de localisation simple (un seul pin sur Nieul-sur-Mer + adresse/horaires/téléphone, non contractuelle, aucun fond de carte réel type OSM/Google).
 
-`zones/la-rochelle.html` est la **page type** à dupliquer par commune pour du SEO local (une page = une ville). Pour créer une nouvelle zone : copier ce fichier, remplacer "La Rochelle" par la commune dans le `<title>`, la meta description, le H1, l'intro, la FAQ et le JSON-LD (`name` du breadcrumb + `areaServed`), puis lier la commune correspondante dans `zones.html` (voir le lien sur le pill "La Rochelle").
+`zones/la-rochelle.html` est la **page type** à dupliquer par commune pour du SEO local (une page = une ville) : locate card, bloc "pourquoi ETOURMY ici", stats locales, quartiers desservis, types de chantiers, prestations, FAQ étoffée. Pour créer une nouvelle zone sur ce modèle : copier ce fichier, remplacer "La Rochelle" par la commune dans le `<title>`, la meta description, le H1, l'intro, les quartiers/contexte, la FAQ et le JSON-LD (`name` du breadcrumb + `areaServed`), puis lier la commune correspondante dans `zones.html`.
+
+`zones/ile-de-re.html` a été généré séparément dans Claude Design (contenu déjà rédigé : gestion des résidences secondaires à distance, contraintes air marin/bâti ancien/PLUi/saison, 10 communes avec temps de trajet, FAQ spécifique île) puis intégré ici avec le CSS partagé du site (plus de style inline dupliqué), les photos réelles du site (au lieu des placeholders du mockup), la date de fondation corrigée (1978) et les tirets cadratins retirés.
 
 ## 🚀 Mise en ligne rapide (GitHub Pages)
 
